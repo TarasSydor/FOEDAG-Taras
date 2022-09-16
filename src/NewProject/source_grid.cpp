@@ -128,7 +128,7 @@ void sourceGrid::currentFileSet(const QString &fileSet) {
 void sourceGrid::AddFiles() {
   QString fileformat;
   if (GT_SOURCE == m_type) {
-    fileformat = QString(tr("Design Files(*.v *.sv *.vhd)"));
+    fileformat = QString(tr("Design Files(*.v *.sv *.vhd);;All Files(*.*)"));
   } else if (GT_CONSTRAINTS == m_type) {
     fileformat = QString(tr("Constraint Files(*.SDC *.sdc)"));
   }
